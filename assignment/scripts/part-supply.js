@@ -38,7 +38,7 @@ supplyChanges.push(25);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
 
-for (i=0; i < supplyChanges.length; i++) {
+for (let i=0; i < supplyChanges.length; i++) {
     let x = supplyChanges[i];
     if (x > 0) {
         console.log(`Added`, x, `parts.`);
@@ -72,7 +72,7 @@ console.log('8. Total supplies available is:');
 and I didn't catch it until later. So, I made sure to just add the -6, which would simply subtract it. 
 That was sneaky haha */
 let sum = 0;
-for (i=0; i < supplyChanges.length; i++) {
+for (let i=0; i < supplyChanges.length; i++) {
     sum = sum + supplyChanges[i];
 }
 console.log(sum);
